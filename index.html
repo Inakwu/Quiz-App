@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <!-- font-awesome -->
+    <script>
+      src = "https://kit.fontawesome.com/58ba6d644a.js";
+      crossorigin = "anonymous";
+    </script>
+  </head>
+  <body>
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <!-- Intro page -->
+        <div class="intro-overlay">
+          <div class="intro-container">
+            <h3>click the button if you are ready for this quiz &#9203;</h3>
+            <button class="start-btn btn">start</button>
+          </div>
+        </div>
+
+        <!-- quiz container -->
+        <div class="quiz-container hide" id="quiz">
+          <!-- questions -->
+          <div class="quiz-header">
+            <h2 class="question">question text</h2>
+            <ul>
+              <li>
+                <input type="radio" name="text" id="a" class="answer" />
+                <label for="a" id="a_text">answer</label>
+              </li>
+
+              <li>
+                <input type="radio" name="text" id="b" class="answer" />
+                <label for="b" id="b_text">answer</label>
+              </li>
+
+              <li>
+                <input type="radio" name="text" id="c" class="answer" />
+                <label for="c" id="c_text">answer</label>
+              </li>
+
+              <li>
+                <input type="radio" name="text" id="d" class="answer" />
+                <label for="d" id="d_text">answer</label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="submit-btn btn hide">submit</button>
+      </div>
+    </header>
+
+    <!-- end of hero -->
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
